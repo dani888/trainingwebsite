@@ -1,0 +1,46 @@
+/*  
+	Sass for the BGM Advertisers Homepage
+*/
+
+/*++++++++++++++++++++++
+	MIXINS
+++++++++++++++++++++++*/
+
+@import "../mixins/bourbon/bourbon";
+@import "../mixins/sprites";
+@import "../mixins/custom_mixins";
+
+/*++++++++++++++++++++++
+	VARIABLES
+++++++++++++++++++++++*/
+$black      	: #1a1a1a;
+$lightBlack		: #333333;
+$white      	: #fff;
+$red			: #C30;
+$grey			: #656565;
+$darkgrey		: #333333;
+$lightgrey		: #808080;
+$ultraLightGrey	: #b3b3b3;
+$ultraLightGrey2: #f2f2f2;
+$purple			: #3d013d;
+$linkBlue		: #137abf;
+
+$maxWidth		: 1200px;
+$desktop		: "screen and (max-width : 1200px)";
+$tablet			: "screen and (max-width : 982px)";
+$mobile			: "screen and (max-width : 735px)";
+$mini			: "screen and (max-width : 376px)";
+
+$baseUrl		: "../../";
+/*++++++++++++++++++++++
+	FONTS
+++++++++++++++++++++++*/
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900");
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.wrap{
+	max-width:$maxWidth;
+	margin:0 auto;
+}

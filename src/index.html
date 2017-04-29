@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+	<link rel="stylesheet" href="scripts/css/libraries/normalize.css">
+	<link rel="stylesheet" href="scripts/css/libraries/font-awesome.css">
+	<link rel="stylesheet" href="scripts/css/template-site.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+</head>
+<body>
+	<div class="header wrap"></div>
+	<div class="menu wrap">
+		<ul>
+			<li class="veggie-hamburger-menu"><p>MENU</p><i class="fa fa-bars fa-black"></i></li>
+		    <li class="home"><a href="#/home">Home </a> </li>
+		    <li class="menuoptionone"><a href="#/menuoptionone">Menu Option One </a> </li>
+		    <li class="menu-option-two"><a href="#/menu-option-two">Menu Option Two </a> </li>
+		</ul>
+	</div>
+	<div class="space wrap"></div>
+	<div class="content wrap" ng-view></div>
+	<div class="space wrap"></div>
+	<div class="footer wrap">
+		<div class="wrap">
+			<a href="#/home">Home</a>
+			<div class="seperator"></div>
+			<a href="#/footeritemone">FooterItemOne</a>
+			<div class="seperator"></div>
+			<a href="#/footer-item-two">Footer Item Two</a>
+			<div class="seperator"></div>
+		</div>
+		<div class="wrap">
+			&copy; copywright 2017
+		</div>
+	</div>
+	<script src="scripts/js/libraries/jquery-1.11.2.min.js"></script>
+	<script src="scripts/js/libraries/modernizr.custom.51672.js"></script>
+	<script src="node_modules/angular/angular.min.js"></script>
+	<script src="node_modules/angular-route/angular-route.min.js"></script>
+	<script src="node_modules/angular-css/angular-css.min.js"></script>
+	<script src="scripts/js/template-script.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+</body>
+</html>

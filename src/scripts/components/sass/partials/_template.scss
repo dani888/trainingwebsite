@@ -1,0 +1,222 @@
+.menu{
+	@include clearfix;
+	ul{
+		list-style: none;
+		margin:0px;
+		padding:0px;
+	    -webkit-transition: all .2s ease-in-out;
+	    -moz-transition: all .2s ease-in-out;
+	    -ms-transition: all .2s ease-in-out;
+	    -o-transition: all .2s ease-in-out;
+	    transition: all .2s ease-in-out;
+		li{
+			float: left;
+			height: 50px;
+			line-height: 30px;
+			color:white;
+			padding:10px;
+			background:$red;
+			box-sizing: border-box;
+			text-align: center;
+			cursor: pointer;
+			&:hover{
+				background:$darkgrey;
+			}
+			&.veggie-hamburger-menu{
+				display:none;
+			}
+			&.home{
+				width:7%;
+			}
+			&.biography{
+				width:11%;
+			}
+			&.curriculum-vitae{
+				width:16%;
+			}
+			&.representative-works{
+				width:20%;
+			}
+			&.discography{
+				width:13%;
+			}
+			&.links{
+				width:7%;
+			}
+			&.upcoming-events{
+				width:17%;
+			}
+			&.reviews{
+				width:9%
+			}
+			a{
+				color: $white;
+				text-decoration: none;
+			}
+			@media #{$tablet} {
+				font-size: 14px;
+			}
+			@media #{$mobile} {
+				font-size: 18px;
+				&.veggie-hamburger-menu{
+					color:$black;
+					display:block;
+					text-align: center;
+					background: $white;
+					&:hover{
+						background: $white;
+					}
+					p{
+						display: inline;
+						height: 50px;
+						line-height: 30px;
+						padding-right: 10px;
+						font-size: 20px;
+					}
+				}
+				&.home{
+					width:100%;
+				}
+				&.biography{
+					width:100%;
+				}
+				&.curriculum-vitae{
+					width:100%;
+				}
+				&.representative-works{
+					width:100%;
+				}
+				&.discography{
+					width:100%;
+				}
+				&.links{
+					width:100%;
+				}
+				&.upcoming-events{
+					width:100%;
+				}
+				&.reviews{
+					width:100%;
+				}
+				float:none;
+			}
+		}
+		@media #{$mobile} {
+			height:50px;
+			overflow: hidden;
+			border-bottom:1px solid $black;
+			border-top:1px solid $black;
+			&.open{
+				height: 450px;
+			}
+		}
+	}
+}
+.space{
+	height:10px;
+}
+.content{
+	padding:20px;
+	ul{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		border-top:1px solid $ultraLightGrey;
+		border-bottom:1px solid $ultraLightGrey;
+		margin-bottom: 30px;
+		margin-top: 10px;
+		li{
+			padding:10px;
+			height: 50px;
+			line-height: 30px;
+			width:100%;
+			box-sizing: border-box;
+			cursor: pointer;
+			&:nth-child(odd){
+				background: $ultraLightGrey2;
+			}
+			&:hover{
+				background: $purple;
+				a{
+					color:$white;
+				}
+			}
+			a{
+				color: $linkBlue;
+				text-decoration: none;
+			}
+		}
+	}
+}
+.discography{
+	.wrap{
+		@include clearfix;
+		div{
+			float: left;
+		}
+		div:nth-child(1){
+			width:26%;
+			img{
+				width:100%;
+				max-width: 300px;
+			}
+		}
+		div:nth-child(2){
+			width:72%;
+			padding:1%;
+		}
+		margin-bottom: 50px;
+		@media #{$mobile} {
+			div:nth-child(1){
+				width:98%;
+				padding:1%;
+				img{
+					width:100%;
+					max-width: 300px;
+				}
+			}
+			div:nth-child(2){
+				width:98%;
+				padding:1%;
+			}
+		}
+	}
+}
+.footer{
+	background: $black;
+	width:100%;
+	height:150px;
+	color:$white;
+	font-weight:200;
+	padding-top:25px;
+	text-align: center;
+	.wrap{
+		margin:25px;
+	}
+	a{
+		color:$white;
+		font-weight: 200;
+	}
+	.seperator{
+		display: inline-block;
+		width:1px;
+		background:$white;
+		margin: 0 10px;
+		height: 100%;
+		height: 15px;
+		top: 3px;
+		position: relative;
+	}
+	@media #{$tablet} {
+
+	}
+	@media #{$mobile} {
+		height: 250px;
+		a{
+			display: block;
+		}
+		.seperator{
+			display:none;
+		}
+	}
+}
